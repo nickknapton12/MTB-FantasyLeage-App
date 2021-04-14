@@ -2,7 +2,6 @@ import React from 'react';
 import '../styles/LoginPageStyle.css';
 import { Link } from 'react-router-dom';
 import Axios from 'axios';
-import { JsonWebTokenError } from 'jsonwebtoken';
 
 class LoginPage extends React.Component {
     constructor(){
@@ -15,7 +14,7 @@ class LoginPage extends React.Component {
     }
 
     login(){
-        Axios.post("http://localhost:5000/login/", {
+        Axios.post("https://mtb-fantasy-league.herokuapp.com/login/", {
             "email": document.getElementById("username").value,
             "password": document.getElementById("password").value
         })

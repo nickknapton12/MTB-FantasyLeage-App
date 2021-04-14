@@ -9,12 +9,11 @@ import card3Photo from '../images/discipline.jpg';
 import card4Photo from '../images/prize.png';
 import React from 'react';
 import Axios from 'axios';
-const jwt = require('jsonwebtoken');
 
 class HomePage extends React.Component {
 
   componentDidMount(){
-    Axios.post("http://localhost:5000/login/verifytoken", {
+    Axios.post("https://mtb-fantasy-league.herokuapp.com/login/verifytoken", {
         "token": localStorage.getItem('token')
     })
     .then(res => {

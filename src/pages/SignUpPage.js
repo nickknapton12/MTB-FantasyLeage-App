@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/LoginPageStyle.css';
-import { Link, Redirect } from 'react-router-dom';
 import Axios from 'axios';
 
 class SignUpPage extends React.Component {
@@ -18,7 +17,7 @@ class SignUpPage extends React.Component {
 
     signUp(){
         let thisObject = this;
-        Axios.post("http://localhost:5000/login/signup", {
+        Axios.post("https://mtb-fantasy-league.herokuapp.com/login/signup", {
             "username": document.getElementById("username").value,
             "email": document.getElementById("email").value,
             "firstName": document.getElementById("firstName").value,
