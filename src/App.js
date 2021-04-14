@@ -17,6 +17,8 @@ import SignUpPage from './pages/SignUpPage';
 
 function App() {
   return (
+    <div>
+    <h1>HelloWorld</h1>
     <Router>
         <div className="App">
         <ScrollIntoView>
@@ -35,6 +37,7 @@ function App() {
         </ScrollIntoView>
         </div>
     </Router>
+    </div>
   );
 }
 
