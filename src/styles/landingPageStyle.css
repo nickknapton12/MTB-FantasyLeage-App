@@ -1,0 +1,39 @@
+.landingPage{
+    height: 870px;
+    background-image: url(../images/landingPhoto2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top ;
+    display: block;
+}
+
+.landingText{
+    padding: 300px 0 0 0;
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    text-shadow: 4px 4px 7px #000000;
+    font-family: 'Audiowide', cursive;
+    margin:0;
+}
+
+.playNowButton{
+    background-color:rgb(216,4,4);
+    width: 130px;
+    height: 48px;
+    border-radius: 7px;
+    margin: auto;
+}
+
+.playNowButton:hover{
+    transform: scale(1.08);
+    transition: 0.5s;
+}
+
+.playNowButtonText{
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    padding: 13px 0 0 0;
+}

@@ -1,0 +1,18 @@
+.ResultsPageHeader{
+    height: 600px;
+    width:100%;
+    background-image: url(https://ep1.pinkbike.org/p6pb19661147/p6pb19661147.jpg);
+    background-size: cover;
+    background-position: center 1050px;
+    display: block;
+}
+
+.ResultsTitle{
+    padding: 270px 0 0 0;
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    text-shadow: 4px 4px 7px #000000;
+    font-family: 'Audiowide', cursive;
+    margin:0;
+}

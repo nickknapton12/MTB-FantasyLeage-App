@@ -1,0 +1,8 @@
+.NewsPageHeader{
+    height: 600px;
+    width:100%;
+    background-image: url(https://ep1.pinkbike.org/p6pb19641568/p6pb19641568.jpg);
+    background-size: cover;
+    background-position: center 1200px;
+    display: block;
+}

@@ -1,0 +1,68 @@
+body{
+    margin:0;
+}
+
+h4{
+    margin:0;
+}
+
+.footer{
+    height: 250px;
+    background-color: rgb(31, 50, 68);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    width: 100vw;
+    max-width: 100%;
+}
+
+.footerWrap{
+    width: 800px;
+    height: 80%;
+    margin: auto;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerBar1{
+    margin-right: 60px;
+}
+
+.footerLogo{
+    height: 40px;
+    margin: 0 0px 15px 0;
+}
+
+.footerTitle{
+    color: white;
+    font-family: 'Audiowide', cursive;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+.footerLink{
+    text-align: left;
+    margin: 4px 0 0 4px;
+    color:white;
+    font-size: 16px;
+    font-family: 'Audiowide', cursive;
+    font-weight: 100;
+}
+
+.footerLink:hover{
+    color: red;
+    transition: 0.3s;
+}
+
+.footerBar{
+    height: 1px;
+    width: 170px;
+    background-color: white;
+    margin-bottom: 17px;
+    margin-right: 60px;
+}

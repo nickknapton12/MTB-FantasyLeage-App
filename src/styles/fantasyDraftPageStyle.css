@@ -1,0 +1,182 @@
+.fantasyDraftWindowHeader{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(16, 32, 46);
+    border-radius: 20px 20px 0 0 ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.fantasyDraftWindow{
+    width: 80vw;
+    height: auto;
+    background-color: rgb(31, 50, 68);
+    margin: 140px auto 80px auto;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.75);
+}
+
+.fantasyDraftWindowButton{
+    width: 150px;
+    height: 45px;
+    background-color: rgb(216,4,4);
+    margin: 0 15px 0 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.fantasyDraftWindowButton:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.fantasyDraftWindowButtonText{
+    margin: 8px auto auto auto;
+    font-weight: 100;
+    font-size: 22px;
+    font-family: 'Audiowide', cursive;
+    color: white;
+}
+
+.fantasyDraftPageHeader{
+    font-weight: 100;
+    font-size: 50px;
+    font-family: 'Audiowide', cursive;
+    color: white;
+    margin: 30px 0 0 0;
+}
+
+.fantasyDraftTeamContainer{
+    width: 70vw;
+    height: 450px;
+    margin: 35px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: 50px 260px 110px;
+    justify-items: center;
+}
+
+.fantasyDraftRiderBox{
+    background-size: cover;
+    background-position: -30px;
+    width: 12vw;
+    height: 250px;
+    align-self: center;
+    border-radius: 35%;
+    -webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.75);
+}
+
+.riderHeader{
+    font-weight: 100;
+    font-size: 21px;
+    font-family: 'Audiowide', cursive;
+    color: white;
+    margin: 0;
+    align-self: center;
+}
+
+.editRiderButton{
+    width: 60%;
+    height: 45px;
+    background-color: rgb(216,4,4);
+    border-radius: 10px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.editRiderButton:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+#editRiderButtonText{
+    font-size: 20px;
+    margin: 9px auto auto auto;
+}
+
+.fantasyDraftLeagueContainer{
+    width: 70%;
+    height: 450px;
+    margin: 35px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: 50px 260px 110px;
+    justify-items: center;
+}
+
+#globalLeageSpecial{
+    background-position: center;
+    background-size: contain;
+    background-color: black;
+    background-repeat: no-repeat;
+    width: 14vw;
+}
+
+#leagueImage{
+    background-position: center;
+    background-size: cover; 
+    width: 14vw;
+}
+
+.searchFormContainer{
+    display: flex; 
+    width: 40%;
+    flex-wrap: wrap;
+    margin:auto auto auto 28%;
+}
+
+.searchFormHeader{
+    font-weight: 100;
+    font-size: 30px;
+    font-family: 'Audiowide', cursive;
+    color: white;
+    margin: 25px 0 35px 0;
+    align-self: center;
+}
+
+.leagueNameLabel{
+    font-weight: 100;
+    font-size: 21px;
+    font-family: 'Audiowide', cursive;
+    color: white;
+    width: 300px;
+    height: 50px;
+}
+
+.leagueNameInput{
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+.searchButton{
+    width: 200px;
+    height: 50px;
+    margin: 30px auto 0 auto;
+    background-color: rgb(216,4,4);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.joinButtonText{
+    color: white;
+    padding: 6px 0 0 0;
+}
+
+.searchButton:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+#publicLeagueHeader{
+    margin: 60px 0 10px 0;
+}
+
+.errorMessage{
+    color: red;
+}

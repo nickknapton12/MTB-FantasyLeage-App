@@ -1,0 +1,65 @@
+.introPage{
+    height: 450px;
+    background-color: rgb(245,245,245);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    width: 100vw;
+    max-width: 100%;
+}
+
+#left{
+    background-color: white;
+}
+
+.stepBox{
+    width: 1000px;
+    height: 80%;
+    margin: auto;
+    margin-top: 43px;
+    display: grid;
+    grid-template-rows: 150px 75px;
+    grid-template-columns: 540px auto;
+    grid-template-areas: "header img"
+                         "paragraph img"
+                         "button img";
+    gap: 0 40px;
+}
+
+#left{
+    grid-template-areas: "img header"
+                         "img paragraph"
+                         "img button";
+    grid-template-rows: 150px 75px;
+    grid-template-columns: auto 540px;
+}
+
+.boxImg{
+    height: 330px;
+    grid-area: img;
+    justify-self: end;
+    align-self: center;
+}
+
+#right{
+    justify-self: start;
+}
+
+.stepBoxTitles{
+    margin:0 0 6px 0;
+    align-self: end;
+    text-align: start;
+    font-size: 35px;
+    font-family: 'Audiowide', cursive;
+    grid-area: header;
+}
+
+.stepBoxParagraph{
+    text-align: start;
+    margin:0;
+    margin-top: 5px;
+    margin-left: 3px;
+    grid-area: paragraph;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}

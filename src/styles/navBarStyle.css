@@ -1,0 +1,105 @@
+a{
+    text-decoration: none;
+}
+
+.sponsorNav{
+    top:0;
+    background-color: white;
+    display: flex;
+    position: fixed;
+    overflow: hidden;
+    height: 35px;
+    width: 100vw;
+    max-width: 100%;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.sponsorHeader{
+    font-size:12px; 
+    font-family: 'Roboto', sans-serif; 
+    margin: none;
+    padding: 0 20px 0 20px;
+}
+
+.sponsorLogo{
+    height: 90px;
+    margin: none;
+    padding: 0 20px 0 20px;
+}
+
+.navBar{
+    top:0;
+    margin: 35px 0 0 0;
+    background-color: rgb(31, 50, 68);
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    height: 55px;
+    width: 100vw;
+    max-width: 100%;
+    position: fixed;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navItemWrap{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navLogo{
+    height: 50px;
+    margin: 5px 0px 0 100px;
+}
+
+.navItem{
+    color:white;
+    margin: 0 15px 0 15px;
+    width: fit-content;
+    font-family: 'Audiowide', cursive;
+    font-weight: 100;
+    font-size: 21px;
+}
+
+.navItem:hover{
+    transition: 0.3s;
+    color:red;
+}
+
+#signIn{
+    cursor: pointer;
+}
+#signIn1{
+    cursor: pointer;
+    margin-right: 0;
+    margin-left: 60px;
+}
+
+#Register{
+    background-color:rgb(216,4,4);
+    width: 120px;
+    height: 40px;
+    border-radius: 7px;
+    margin: 40px 30px 40px 5px;
+    cursor: pointer;
+}
+
+.registerButton:hover{
+    transform: scale(1.08);
+    transition: 0.5s;
+}
+
+.registerButtonText{
+    text-align: center;
+    color: white;
+    font-family: 'Audiowide', cursive;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 0px 0 0 0;
+    margin-top: 6px;
+}

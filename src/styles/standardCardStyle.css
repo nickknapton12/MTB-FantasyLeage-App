@@ -1,0 +1,69 @@
+.introPage{
+    height: 450px;
+    background-color: rgb(245,245,245);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    width: 100vw;
+    max-width: 100%;
+}
+
+#leftStandard{
+    background-color: white;
+}
+
+.stepBoxStandard{
+    width: 1000px;
+    height: 80%;
+    margin: auto;
+    margin-top: 130px;
+    display: grid;
+    grid-template-rows: 100px 75px;
+    grid-template-columns: 540px auto;
+    grid-template-areas: "header img"
+                         "paragraph img";
+    gap: 0 40px;
+}
+
+#leftStandard{
+    grid-template-areas: "img header"
+                         "img paragraph";
+    grid-template-rows: 100px 75px;
+    grid-template-columns: auto 540px;
+}
+
+.boxImg{
+    height: 330px;
+    grid-area: img;
+    justify-self: end;
+    align-self: center;
+}
+
+#right{
+    justify-self: start;
+}
+
+.stepBoxTitles{
+    margin:0 0 6px 0;
+    align-self: end;
+    text-align: start;
+    justify-items: end;
+    font-size: 35px;
+    font-family: 'Audiowide', cursive;
+    grid-area: header;
+    color: black;
+}
+
+.stepBoxParagraph{
+    text-align: start;
+    margin:0;
+    margin-top: 5px;
+    margin-left: 3px;
+    grid-area: paragraph;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.titleLink{
+    text-decoration: none;
+}
