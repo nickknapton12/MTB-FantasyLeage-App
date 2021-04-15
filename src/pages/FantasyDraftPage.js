@@ -32,7 +32,7 @@ class FantasyDraftPage extends React.Component {
 
   componentDidMount() {
     let token = localStorage.getItem("token");
-    Axios.post("http://localhost:5000/api/getTeam", {
+    Axios.post("https://mtb-fantasy-league.herokuapp.com/api/getTeam", {
       "token": token
     })
       .then((res) => {
@@ -43,7 +43,7 @@ class FantasyDraftPage extends React.Component {
 
       })
 
-    Axios.post("http://localhost:5000/api/getLeagues", {
+    Axios.post("https://mtb-fantasy-league.herokuapp.com/api/getLeagues", {
       "token": token
     })
       .then((res) => {
@@ -71,7 +71,7 @@ class FantasyDraftPage extends React.Component {
   }
 
   editRider(riderNum, newRider) {
-    Axios.post("http://localhost:5000/api/updateRider", {
+    Axios.post("https://mtb-fantasy-league.herokuapp.com/api/updateRider", {
       token: localStorage.getItem("token"),
       oldRider: this.state.team[riderNum],
       newRider: newRider
@@ -88,7 +88,7 @@ class FantasyDraftPage extends React.Component {
   editRiderPage(riderNum) {
     this.setState({ page: "editRider" });
     this.setState({ riderToChange: riderNum })
-    Axios.post("http://localhost:5000/api/getAllRiders", {
+    Axios.post("https://mtb-fantasy-league.herokuapp.com/api/getAllRiders", {
 
     })
       .then((res) => {
@@ -101,7 +101,7 @@ class FantasyDraftPage extends React.Component {
 
   editLeague(leagueNum, newLeague, password) {
     console.log(this.state.leagues[leagueNum])
-    Axios.post("http://localhost:5000/api/updateLeague", {
+    Axios.post("https://mtb-fantasy-league.herokuapp.com/api/updateLeague", {
       token: localStorage.getItem("token"),
       oldLeague: this.state.leagues[leagueNum],
       newLeague: newLeague,
@@ -122,7 +122,7 @@ class FantasyDraftPage extends React.Component {
     this.setState({ leagueToChange: leagueNum })
     this.setState({ pageSpecial: "special" })
     this.setState({ errorMessage: "" })
-    Axios.post("http://localhost:5000/api/getAllPublicLeagues", {
+    Axios.post("https://mtb-fantasy-league.herokuapp.com/api/getAllPublicLeagues", {
 
     })
       .then((res) => {
@@ -139,7 +139,7 @@ class FantasyDraftPage extends React.Component {
   }
 
   createLeague(leagueNum, name, publicOrNot, password) {
-    Axios.post("http://localhost:5000/leagues/newLeague", {
+    Axios.post("https://mtb-fantasy-league.herokuapp.com/leagues/newLeague", {
       name: name,
       token: localStorage.getItem("token"),
       password: password,

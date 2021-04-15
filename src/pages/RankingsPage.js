@@ -27,7 +27,7 @@ class RankingsPage extends React.Component {
   async componentDidMount() {
     let token = localStorage.getItem("token");
 
-    await Axios.post("http://localhost:5000/api/getLeagues", {
+    await Axios.post("https://mtb-fantasy-league.herokuapp.com/api/getLeagues", {
       "token": token
     })
       .then((res) => {
@@ -37,7 +37,7 @@ class RankingsPage extends React.Component {
       .catch(() => {
 
       })
-    await Axios.post("http://localhost:5000/api/getAllUsersInLeague", {
+    await Axios.post("https://mtb-fantasy-league.herokuapp.com/api/getAllUsersInLeague", {
       "token": token,
       "league": this.state.leagueToShow
     })
