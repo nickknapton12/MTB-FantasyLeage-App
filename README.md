@@ -4,15 +4,12 @@ See it here: https://nickknapton12.github.io/MTB-Fantasy-League-App/
 ## Completed
 * HomePage
 * RaceResults Page
+* Backend (Not on github, see project at link)
 
 ## To do
 * Pages
   * Rankings 
-  * News 
   * Stats 
-  * Draft pages
-* Backend 
-* DataBase
 * Subpages in the footer such as:
   * prizes
   * rules 
