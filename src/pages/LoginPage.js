@@ -14,13 +14,13 @@ class LoginPage extends React.Component {
     }
 
     login(){
-        Axios.post("https://mtb-fantasy-league.herokuapp.com/login/", {
+        Axios.post("http://localhost:5000/login/", {
             "email": document.getElementById("username").value,
             "password": document.getElementById("password").value
         })
         .then(res => {
             localStorage.setItem("token", res.data.token);
-            window.location.href = "https://dazzling-curran-ec76a5.netlify.app/";
+            window.location.href = "http://localhost:3000";
         })
         .catch(res => {
             this.setState({ errorMessage: "Email or password is wrong" })

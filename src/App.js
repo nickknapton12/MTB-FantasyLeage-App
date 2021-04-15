@@ -1,4 +1,5 @@
 import './styles/App.css';
+import React, { useState, useEffect, useReducer } from 'react';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -13,30 +14,52 @@ import StatsPage from './pages/StatsPage';
 import ScrollIntoView from "./components/ScrollIntoView";
 import LoginPage from './pages/LoginPage';
 import SignUpPage from './pages/SignUpPage';
+import BarLoader from "react-spinners/BarLoader";
 
 
 function App() {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1200)
+  }, [])
+
   return (
     <div>
-    <h1>HelloWorld</h1>
-    <Router>
-        <div className="App">
-        <ScrollIntoView>
-          <NavBar />
-            <Switch>
-              <Route path="/" exact component={HomePage} />
-              <Route path="/FantasyDraft" exact component={FantasyDraftPage} />
-              <Route path="/Rankings" exact component={RankingsPage} />
-              <Route path="/Login" exact component={LoginPage} />
-              <Route path="/RaceResults" exact component={RaceResultsPage} />
-              <Route path="/News" exact component={NewsPage} />
-              <Route path="/Stats" exact component={StatsPage} />
-              <Route path="/SignUp" exact component={SignUpPage} />
-            </Switch>
-          <Footer />
-        </ScrollIntoView>
-        </div>
-    </Router>
+      {
+        loading ?
+          <div className="appLoad">
+            <BarLoader
+              width={"100%"}
+              color={"rgb(216,4,4)"}
+              loading={loading}
+            />
+          </div>
+
+          :
+          <div className="App">
+            <Router>
+              <ScrollIntoView>
+                <NavBar />
+                <Switch>
+                  <Route path="/" exact component={HomePage} />
+                  <Route path="/FantasyDraft" exact component={FantasyDraftPage} />
+                  <Route path="/Rankings" exact component={RankingsPage} />
+                  <Route path="/Login" exact component={LoginPage} />
+                  <Route path="/RaceResults" exact component={RaceResultsPage} />
+                  <Route path="/News" exact component={NewsPage} />
+                  <Route path="/Stats" exact component={StatsPage} />
+                  <Route path="/SignUp" exact component={SignUpPage} />
+                </Switch>
+                <Footer />
+              </ScrollIntoView>
+            </Router>
+          </div>
+      }
+
     </div>
   );
 }

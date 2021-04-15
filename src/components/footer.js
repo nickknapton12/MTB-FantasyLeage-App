@@ -10,22 +10,21 @@ class Footer extends React.Component{
                 <div className="footerWrap">
                     <div className="footerBar1">
                         <img src={pbLogo} className="footerLogo" />
-                        <a href="/#"><div className="playNowButton" style={{margin: "0 0 15px 0"}}>
+                        <a href="/Login"><div className="playNowButton" style={{margin: "0 0 15px 0"}}>
                             <h2 className="playNowButtonText">PLAY NOW</h2>
                         </div></a>
-                        <a href="/#"><div className="playNowButton" style={{backgroundColor: "white"}}>
+                        <a href="/signUp"><div className="playNowButton" style={{backgroundColor: "white"}}>
                             <h2 className="playNowButtonText" style={{color:"black"}}>SIGN IN</h2>
                         </div></a>
                     </div>
                     <div className="footerBarGame">
                         <h4 className="footerTitle">THE GAME</h4>
                         <div className="footerBar"></div>
-                        <a href="/#"><h4 className="footerLink">Rosters</h4></a>
-                        <a href="/#"><h4 className="footerLink">Leagues</h4></a>
-                        <a href="/#"><h4 className="footerLink">Rankings</h4></a>
+                        <a href="/FantasyDraft"><h4 className="footerLink">Rosters</h4></a>
+                        <a href="/FantasyDraft"><h4 className="footerLink">Leagues</h4></a>
+                        <a href="/Rankings"><h4 className="footerLink">Rankings</h4></a>
                         <a href="/RaceResults"><h4 className="footerLink">Race Results</h4></a>
                         <a href="/News"><h4 className="footerLink">News</h4></a>
-                        <a href="/#"><h4 className="footerLink">Stats</h4></a>
                     </div>
                     <div className="footerBarOther">
                         <h4 className="footerTitle">OTHER INFO</h4>

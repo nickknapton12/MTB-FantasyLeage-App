@@ -1,0 +1,15 @@
+.tableHeader{
+    width: 70%;
+    margin: auto auto auto auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.rankingsHeader{
+    color:white;
+}
+
+.tableSubHeader{
+    color:white;
+}

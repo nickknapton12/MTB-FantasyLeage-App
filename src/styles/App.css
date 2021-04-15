@@ -1,5 +1,10 @@
-.App {
+.appLoad {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .switch-wrapper {
@@ -8,4 +13,8 @@
 
 .switch-wrapper > div {
   position: absolute;
+}
+
+.App{
+  text-align: center;
 }

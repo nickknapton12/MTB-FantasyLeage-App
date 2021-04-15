@@ -7,7 +7,6 @@ import sram from "../images/sramLogo.png";
 import shimano from "../images/shimanoLogo.png";
 import rockshox from "../images/rockshoxLogo.png";
 import pbLogo from "../images/pblogo.png";
-
 import { Link } from 'react-router-dom';
 
 class NavBar extends React.Component{
@@ -34,14 +33,14 @@ class NavBar extends React.Component{
 
     loggedIn(){
         if(this.state.LoggedIn == "Log in"){
-            window.location.href = "https://dazzling-curran-ec76a5.netlify.app/login"; 
+            window.location.href = "http://localhost:3000/Login"; 
         }else{
             this.logOut();
         }
     }
 
     signIn(){
-        window.location.href = "https://dazzling-curran-ec76a5.netlify.app/SignUp"; 
+        window.location.href = "http://localhost:3000/SignUp"; 
     }
 
     logOut(){
@@ -49,7 +48,7 @@ class NavBar extends React.Component{
         this.setState({ LoggedIn: "Log in" })
         this.setState({ LoggedIn1: "Register" })
         this.setState({ LoggedInLink: "Logged out" })
-        window.location.href = "https://dazzling-curran-ec76a5.netlify.app/";
+        window.location.href = "http://localhost:3000";
     }
 
     render() {
@@ -70,7 +69,6 @@ class NavBar extends React.Component{
                 <ConditionalLink to="/Rankings" condition={ this.state.LoggedInLink } children={<h2 className="navItem">Rankings</h2>} className="navItem" />
                 <ConditionalLink to="/RaceResults" condition={ this.state.LoggedInLink } children={<h2 className="navItem">Race Results</h2>} className="navItem" />
                 <ConditionalLink to="/News" condition={ this.state.LoggedInLink } children={<h2 className="navItem">News</h2>} className="navItem" />
-                <ConditionalLink to="/Stats" condition={ this.state.LoggedInLink } children={<h2 className="navItem">Stats</h2>} className="navItem" />
             </div>
             <h2 onClick={ this.loggedIn } id="signIn1" className="navItem">{ this.state.LoggedIn }</h2>
             <div className="registerButton" id={ this.state.LoggedIn1 }><h2 onClick={ this.signIn } id="signIn" className="registerButtonText">{ this.state.LoggedIn1 }</h2></div>

@@ -13,7 +13,7 @@ import Axios from 'axios';
 class HomePage extends React.Component {
 
   componentDidMount(){
-    Axios.post("https://mtb-fantasy-league.herokuapp.com/login/verifytoken", {
+    Axios.post("http://localhost:5000/login/verifytoken", {
         "token": localStorage.getItem('token')
     })
     .then(res => {

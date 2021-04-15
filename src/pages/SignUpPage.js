@@ -17,7 +17,7 @@ class SignUpPage extends React.Component {
 
     signUp(){
         let thisObject = this;
-        Axios.post("https://mtb-fantasy-league.herokuapp.com/login/signup", {
+        Axios.post("http://localhost:5000/login/signup", {
             "username": document.getElementById("username").value,
             "email": document.getElementById("email").value,
             "firstName": document.getElementById("firstName").value,
@@ -25,7 +25,7 @@ class SignUpPage extends React.Component {
             "password": document.getElementById("password").value
         }).then(res => {
             localStorage.setItem("token", res.data.token);
-            window.location.href = "https://dazzling-curran-ec76a5.netlify.app/";
+            window.location.href = "http://localhost:3000";
         }).catch(function (err) {
             try{
                 if(err.response.data.name == "MongoError"){
