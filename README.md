@@ -1,5 +1,5 @@
 # Mountain Bike Fantasy App
-See it here: https://nickknapton12.github.io/MTB-Fantasy-League-App/
+See it here: https://dazzling-curran-ec76a5.netlify.app/
 
 ## Completed
 * HomePage
