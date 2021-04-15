@@ -20,7 +20,7 @@ class LoginPage extends React.Component {
         })
         .then(res => {
             localStorage.setItem("token", res.data.token);
-            window.location.href = "http://localhost:3000/";
+            window.location.href = "https://dazzling-curran-ec76a5.netlify.app/";
         })
         .catch(res => {
             this.setState({ errorMessage: "Email or password is wrong" })

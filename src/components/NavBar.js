@@ -34,14 +34,14 @@ class NavBar extends React.Component{
 
     loggedIn(){
         if(this.state.LoggedIn == "Log in"){
-            window.location.href = "http://localhost:3000/login"; 
+            window.location.href = "https://dazzling-curran-ec76a5.netlify.app/login"; 
         }else{
             this.logOut();
         }
     }
 
     signIn(){
-        window.location.href = "http://localhost:3000/SignUp"; 
+        window.location.href = "https://dazzling-curran-ec76a5.netlify.app/SignUp"; 
     }
 
     logOut(){
@@ -49,7 +49,7 @@ class NavBar extends React.Component{
         this.setState({ LoggedIn: "Log in" })
         this.setState({ LoggedIn1: "Register" })
         this.setState({ LoggedInLink: "Logged out" })
-        window.location.href = "http://localhost:3000/";
+        window.location.href = "https://dazzling-curran-ec76a5.netlify.app/";
     }
 
     render() {

@@ -25,7 +25,7 @@ class SignUpPage extends React.Component {
             "password": document.getElementById("password").value
         }).then(res => {
             localStorage.setItem("token", res.data.token);
-            window.location.href = "http://localhost:3000/";
+            window.location.href = "https://dazzling-curran-ec76a5.netlify.app/";
         }).catch(function (err) {
             try{
                 if(err.response.data.name == "MongoError"){
