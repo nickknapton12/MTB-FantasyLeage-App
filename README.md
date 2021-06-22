@@ -3,8 +3,6 @@
 **Unfortunately only optimised for desktop currently**
 
 ## READ
-This is only the client side of the app. The backend is not public on github for now, however it is hosted and the client can interact with it!
-
 It is branded with pinkbike logos aswell as logos from "sponsors". This is **just for proof of concept**, this is in no way associated with any of these companys, it is just a personal project I built and wanted to build it as if I was making it for pinkbike.
 
 ## Motivation
